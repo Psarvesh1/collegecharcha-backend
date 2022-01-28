@@ -24,6 +24,11 @@ const userSchema = new mongoose.Schema({
     min: 8,
     max: 1024,
   },
+  otp: {
+    type: String,
+    required: true,
+    min: 6
+  },
   date: {
     type: Date,
     default: Date.now,
